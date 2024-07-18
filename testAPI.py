@@ -21,7 +21,8 @@ try:
     data = response.json()
 
     # Exiba os títulos das notícias e os URLs
-    for i, article in enumerate(data['response']['docs']):
+    for i, article in enumerate(data['response']['docs']): #o inumerate serve para
+        # iterar sobre uma sequencia como uma lista ou uma tupla
         print(f"{i + 1}. {article['headline']['main']}")
         print(f"URL: {article['web_url']}\n")
 
