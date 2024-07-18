@@ -21,7 +21,7 @@ try:
     data = response.json()
 
     # Exiba os títulos das notícias e os URLs
-    for i, article in enumerate(data['response']['docs']):
+    for i, article in enumerate(data['response']['docs']): #para cada artigo no periodo da data especifica ele printa usando o for para percorrer essa "lista"
         print(f"{i + 1}. {article['headline']['main']}")
         print(f"URL: {article['web_url']}\n")
 
